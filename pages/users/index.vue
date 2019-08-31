@@ -5,6 +5,14 @@
         <h1>ユーザー一覧</h1>
       </v-flex>
 
+      <v-flex xs12 mt-5 mr-5 text-xs-right>
+        <nuxt-link to="users/:id/edit">
+          <v-btn color="info">
+            連絡先追加
+          </v-btn>
+        </nuxt-link>
+      </v-flex>
+
       <v-flex xs12 mt-5 justify-center>
         <v-data-table :headers='headers' :items='users'>
           <template v-slot:items="props">
